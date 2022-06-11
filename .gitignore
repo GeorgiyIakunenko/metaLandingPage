@@ -8,5 +8,4 @@ npm-debug.*
 dist/
 nome_modules/
 package-lock.json
-app/css/*
 node_modules
