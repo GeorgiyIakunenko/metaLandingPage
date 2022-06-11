@@ -1,4 +1,4 @@
-# [MetaByGrogre](https://georgeyakunenko.github.io/Multipage-site-Glee/)
+# [MetaByGeorge](https://georgeyakunenko.github.io/metaByGeorge/)
 Site Meta created by George Yakunenko
 - using BEM naming
 - adaptive for any device
