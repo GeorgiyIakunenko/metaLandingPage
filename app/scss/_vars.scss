@@ -1,0 +1,23 @@
+$accent:#8DFD1B;
+$default: #fff;
+$bg:#222222;
+
+%Audiowide{
+  font-family: 'Audiowide', cursive;
+}
+
+%Mono{
+  font-family: 'DM Mono', monospace;
+}
+
+%Inter{
+  font-family: 'Inter', sans-serif;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

@@ -1,0 +1,636 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 6;
+  padding-top: 50px;
+  padding-bottom: 15px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__social {
+    display: flex;
+    grid-gap: 20px;
+    margin-left: auto;
+  }
+
+  &__social-item {
+    padding: 8px;
+    background-color: #fff;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &__social-menu.header__social {
+    display: none;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    grid-gap: 40px;
+  }
+
+  &__list-link {
+    transition: all .3s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.label {
+  margin: 0 auto;
+  max-width: 1395px;
+  padding: 50px 15px 0;
+  display: flex;
+  grid-gap: 20px;
+  align-items: center;
+
+  &__content-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+    @extend %Audiowide;
+    margin-bottom: 45px;
+  }
+
+  &__content-text {
+    margin-bottom: 115px;
+  }
+
+  &__content-btn {
+    @extend %Mono;
+    background-color: $accent;
+    color: #000000;
+    padding: 17px 40px 17px;
+    line-height: 16px;
+    display: inline-block;
+    transition: all .3s;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.wawe {
+  padding: 125px 0 115px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    max-width: 355px;
+
+    span {
+      color: #A8A8A8;
+    }
+  }
+
+  &__content {
+    margin-left: 15px;
+    max-width: 565px;
+  }
+
+  &__subtitle {
+    color: $accent;
+    font-size: 21px;
+    line-height: 32px;
+    padding-left: 25px;
+    border-left: 2px solid $accent;
+    @extend %Mono;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    margin-top: 35px;
+    display: inline-block;
+    padding: 15px 33px;
+    border: 1px solid $accent;
+    @extend %Mono;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $accent;
+      color: #000000;
+    }
+  }
+}
+
+.artists {
+
+  &__title-box {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 125px;
+  }
+
+  &__title {
+    @extend %Audiowide;
+    font-size: 80px;
+    line-height: 88px;
+  }
+
+  &__name {
+    @extend %Mono;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 235px);
+    grid-gap: 80px 60px;
+  }
+
+  &__item-img {
+    max-width: 235px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}
+
+.story {
+  padding: 150px 0 120px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 55px;
+
+    span {
+      color: #A8A8A8;
+    }
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__tab--active {
+    background-color: #222222;
+  }
+
+  &__tab {
+    display: inline-block;
+    width: 282px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: $accent;
+    @extend %Mono;
+  }
+
+  &__content-item {
+    background: #222222;
+    padding: 60px 90px 60px 45px;
+    display: none;
+  }
+
+  &__content-item--active {
+    display: flex;
+    grid-gap: 40px;
+  }
+}
+
+.story-content {
+
+  &__img {
+    width: 100%;
+    max-width: 170px;
+    overflow: hidden;
+    object-fit: cover;
+    max-height: 250px;
+  }
+
+  &__title {
+    color: $accent;
+    font-size: 21px;
+    line-height: 32px;
+    padding-left: 25px;
+    border-left: 2px solid $accent;
+    @extend %Mono;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}
+
+.roadmap {
+
+  &__img-box {
+    height: 240px;
+    width: 100%;
+    background-image: url('../images/roadmap/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 115px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 105px;
+  }
+
+  &__items {
+    padding: 0 15px;
+    max-width: 100%;
+    padding-bottom: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../images/roadmap/full-decor.svg')
+  }
+
+  &__item {
+    max-width: 540px;
+    margin: 0 auto;
+    margin-bottom: 140px;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: absolute;
+        height: 40px;
+        width: 1px;
+        background: #8DFD1B;
+        bottom: -90px;
+        left: 50%;
+      }
+    }
+  }
+}
+
+.roadmap-item {
+  min-height: 270px;
+  height: 100%;
+  background: #222222;
+  border: 1px solid #8DFD1B;
+
+  &__top {
+    padding: 13px;
+    border-bottom: 1px solid #8DFD1B;
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    @extend %Mono;
+  }
+
+  &__num {
+    height: 45px;
+    width: 45px;
+    font-size: 28px;
+    line-height: 28px;
+    color: $accent;
+    border: 1px solid #8DFD1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__num-end {
+    color: #000000;
+    background-color: $accent;
+  }
+
+  &__top-info {
+    font-size: 8px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: $accent;
+  }
+
+  &__top-season {
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    display: flex;
+    padding: 30px 13px 25px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__content {
+    max-width: 300px;
+    @extend %Inter;
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  &__list {
+    margin-bottom: 12px;
+    padding-left: 22px;
+  }
+
+  &__text:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &__img {
+    max-height: 130px;
+  }
+}
+
+.partners {
+
+  &__text {
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 12px;
+    @extend %Mono;
+    color: $accent;
+    margin-bottom: 50px;
+  }
+
+  &__img-box {
+    height: 240px;
+    background-image: url('../images/roadmap/partners.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -70px;
+  }
+}
+
+.questions {
+  padding-top: 200px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  &__title {
+    display: grid;
+    margin-bottom: 50px;
+
+    span {
+      color: #A8A8A8;
+    }
+  }
+
+  &__content {
+    background: #222222;
+    max-width: 560px;
+    padding: 28px;
+    height: fit-content;
+
+  }
+}
+
+.questions-block {
+  margin-bottom: 30px;
+
+  &__title {
+    @extend %Mono;
+    margin-bottom: 28px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      right: 0;
+      top: 4px;
+    }
+  }
+
+  &__text {
+    color: #C4C4C4;
+    font-size: 11px;
+    line-height: 19px;
+  }
+}
+
+.team {
+  padding-top: 115px;
+
+  &__title-box {
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 79px;
+    line-height: 88px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.team-item {
+  max-width: 320px;
+  text-align: center;
+
+  &__name {
+    margin-top: 18px;
+    @extend %Mono;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  &__position {
+    @extend %Mono;
+    font-size: 11px;
+    line-height: 12px;
+    color: $accent;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__social-box {
+    display: flex;
+    justify-content: center;
+    grid-gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &__text {
+    max-width: 240px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+.join {
+  padding: 235px 0 115px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 345px;
+  }
+
+  &__title {
+    font-size: 51px;
+    line-height: 61px;
+    text-transform: uppercase;
+    @extend %Audiowide;
+    display: grid;
+    margin-bottom: 35px;
+
+    span {
+      color: $accent;
+    }
+  }
+
+  &__text {
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: inline-block;
+    color: #000000;
+    @extend %Mono;
+    padding: 14px 30px 14px 60px;
+    background-color: $accent;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+
+    &::before {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/discord.svg');
+      left: 20px;
+      top: 16px;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+
+  &__img {
+    max-width: 585px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
+
+.footer {
+  padding: 100px 0 120px;
+  background-color: #42006A;
+  @extend %Mono;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__copy {
+    margin-right: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__copy-text {
+    font-size: 13px;
+    margin-top: auto;
+  }
+
+  &__list:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &__list-link:hover {
+    color: $accent;
+    transition: all .3s;
+  }
+
+  &__social {
+    margin-left: auto;
+    display: flex;
+    grid-gap: 12px;
+  }
+
+  &__social-item {
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+
+@import 'media';
