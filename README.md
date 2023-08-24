@@ -1,4 +1,4 @@
-# [MetaWebPage](https://georgiyiakunenko.github.io/metaByGeorge/)
+# [MetaWebPage](https://georgiyiakunenko.github.io/metaLandingPage/)
 
 - Impeccably organized website employing BEM methodology for class naming.
 - Enhanced through Gulp workflow and SCSS preprocessor.
