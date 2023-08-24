@@ -1,4 +1,7 @@
 # [MetaWebPage](https://georgiyiakunenko.github.io/metaByGeorge/)
 
-MetaWebPage is a clean and organized website using BEM methodology for class naming, powered by Gulp and SCSS for a polished appearance and seamless functionality. It's designed to be responsive across devices and incorporates captivating scroll animations. Your code is thoughtfully structured, facilitating straightforward maintenance. Just prioritize clear content, maintain design consistency, and ensure optimal performance
+- Impeccably organized website employing BEM methodology for class naming.
+- Enhanced through Gulp workflow and SCSS preprocessor.
+- Ensures full responsiveness on all devices, accompanied by enchanting scroll animations.
+- Maintains clean and optimized HTML, CSS, and JavaScript code.
 
